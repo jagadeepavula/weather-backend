@@ -105,6 +105,9 @@ app.post('v1/auth', function(req,res){
   });
 });
 
+app.get('v1/hello', function(req,res){
+  res.message("hello");
+});
   
 app.listen(3000, function(req, res) {
   console.log("Server is running at port 3000");
