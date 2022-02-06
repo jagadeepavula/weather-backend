@@ -99,6 +99,11 @@ app.get('/GET/data/weather', function(req, res) {
   });
 });
 
+app.post('v1/auth', function(req,res){
+  res.json({
+    "message" : "sanviopaerv5rab8v5b86fdsb"
+  });
+});
 
   
 app.listen(3000, function(req, res) {
