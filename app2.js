@@ -8,11 +8,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.get('/v1/hello', (req, res) => {
-  res.send('Hey there')
+  res.send('Hello there')
   })
 
 app.post('/v1/auth', (req, res) => {
-  // res.send('Auth Success')
+  // res.send('Authenticatoin success')
   username = req.body.username
   password = req.body.password
   if (username == "jagadeep" && password == "password"){
